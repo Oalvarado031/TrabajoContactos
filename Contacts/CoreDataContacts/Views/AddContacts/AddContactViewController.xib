@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNoteViewController" customModule="CoreDataDemo" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddNoteViewController" customModule="CoreDataContacts" customModuleProvider="target">
             <connections>
                 <outlet property="addresTextField" destination="mtI-Mt-GbG" id="cvJ-to-MZC"/>
                 <outlet property="noteTextField" destination="Dj0-x8-4gQ" id="P4M-fw-veT"/>
@@ -37,16 +37,6 @@
                         <constraint firstAttribute="height" constant="40" id="B2i-QT-e2d"/>
                         <constraint firstAttribute="width" constant="229" id="Or1-H4-bPO"/>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="nhm-p4-YyM"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
-                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mtI-Mt-GbG">
-                    <rect key="frame" x="102" y="344" width="229" height="40"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="229" id="MZb-XJ-LKS"/>
-                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="NHJ-Pg-ARd"/>
-                        <constraint firstAttribute="height" constant="40" id="NwJ-52-PR0"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
@@ -84,7 +74,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CtG-pS-34D">
-                    <rect key="frame" x="21" y="354" width="67" height="21"/>
+                    <rect key="frame" x="141" y="344" width="67" height="21"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="hDV-vT-uGL"/>
                         <constraint firstAttribute="width" constant="67" id="nTy-kH-rgt"/>
@@ -101,6 +91,16 @@
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mtI-Mt-GbG">
+                    <rect key="frame" x="76" y="382" width="229" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="229" id="MZb-XJ-LKS"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="NHJ-Pg-ARd"/>
+                        <constraint firstAttribute="height" constant="40" id="NwJ-52-PR0"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -113,16 +113,16 @@
                 <constraint firstItem="H0k-05-8ZP" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="I7V-KK-QZU"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="UNl-bW-KZh" secondAttribute="trailing" constant="16" id="KXX-5M-ODm"/>
                 <constraint firstItem="HQH-PR-BzD" firstAttribute="top" secondItem="Dj0-x8-4gQ" secondAttribute="bottom" constant="51" id="Mxv-Ew-HcU"/>
-                <constraint firstItem="mtI-Mt-GbG" firstAttribute="leading" secondItem="CtG-pS-34D" secondAttribute="trailing" constant="14" id="PI1-f8-5IH"/>
+                <constraint firstItem="mtI-Mt-GbG" firstAttribute="leading" secondItem="CtG-pS-34D" secondAttribute="trailing" constant="-132" id="PI1-f8-5IH"/>
                 <constraint firstItem="HQH-PR-BzD" firstAttribute="leading" secondItem="H0k-05-8ZP" secondAttribute="trailing" constant="17" id="Tiz-hf-oFp"/>
                 <constraint firstItem="UNl-bW-KZh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="22" id="Vpv-QJ-Qk6"/>
                 <constraint firstItem="Dj0-x8-4gQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="102" id="XDz-vU-CRk"/>
                 <constraint firstItem="H0k-05-8ZP" firstAttribute="top" secondItem="zUD-US-YHY" secondAttribute="bottom" constant="70" id="YwP-Q6-CPh"/>
-                <constraint firstItem="CtG-pS-34D" firstAttribute="top" secondItem="H0k-05-8ZP" secondAttribute="bottom" constant="72" id="YyA-ZR-p5y"/>
+                <constraint firstItem="CtG-pS-34D" firstAttribute="top" secondItem="H0k-05-8ZP" secondAttribute="bottom" constant="62" id="YyA-ZR-p5y"/>
                 <constraint firstItem="Dj0-x8-4gQ" firstAttribute="top" secondItem="UNl-bW-KZh" secondAttribute="bottom" constant="54" id="aBh-69-tCf"/>
                 <constraint firstItem="zUD-US-YHY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="hWm-il-WrC"/>
-                <constraint firstItem="mtI-Mt-GbG" firstAttribute="top" secondItem="HQH-PR-BzD" secondAttribute="bottom" constant="53" id="i28-Es-xjw"/>
-                <constraint firstItem="CtG-pS-34D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="xua-wp-U4j"/>
+                <constraint firstItem="mtI-Mt-GbG" firstAttribute="top" secondItem="HQH-PR-BzD" secondAttribute="bottom" constant="91" id="i28-Es-xjw"/>
+                <constraint firstItem="CtG-pS-34D" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="141" id="xua-wp-U4j"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Jat-ga-W9b" secondAttribute="bottom" constant="277" id="zcv-TJ-hZb"/>
             </constraints>
             <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
